@@ -56,8 +56,6 @@ input,select,textarea{font-family:inherit}
 .hd.scrolled{box-shadow:var(--sh-md)}
 .hd-in{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1200px;margin:0 auto;padding:0 24px}
 .logo-link{display:flex;align-items:center}.logo-img{height:36px;width:auto}
-.logo-wrap{background:#071627;padding:10px 16px;border-radius:14px;display:inline-flex;align-items:center}
-.logo-wrap img{height:44px;width:auto;display:block}
 .hd-nav{display:none;align-items:center;gap:32px}
 .hd-nav a{font-size:.85rem;font-weight:500;color:var(--text-secondary);transition:color .2s}
 .hd-nav a:hover{color:var(--text-primary)}
@@ -255,40 +253,13 @@ input,select,textarea{font-family:inherit}
 @keyframes fU{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fD{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:480px){.fg{grid-template-columns:1fr}.hero h1{font-size:1.9rem}}
-
-/* REVIEWS */
-.rev{padding:64px 0;background:var(--bg-deep)}
-.rev-stars{color:var(--yellow);font-size:1.4rem;letter-spacing:2px;margin-bottom:6px}
-.rev-rat{font-size:.85rem;color:var(--text-secondary);margin-bottom:28px}
-.rev-g{display:grid;grid-template-columns:1fr;gap:12px;max-width:800px;margin:0 auto}
-.rev-c{padding:20px;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--r-lg)}
-.rev-q{font-size:.88rem;color:var(--text-secondary);line-height:1.55;font-style:italic;margin-bottom:10px}
-.rev-a{font-size:.78rem;font-weight:600;color:var(--text-muted)}
-.rev-link{display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-size:.82rem;font-weight:600;color:var(--cta);transition:opacity .2s}
-.rev-link:hover{opacity:.8}
-.rev-disc{font-size:.7rem;color:var(--text-muted);margin-top:16px;max-width:500px;margin-left:auto;margin-right:auto}
-@media(min-width:640px){.rev-g{grid-template-columns:repeat(3,1fr)}}
-
-/* LOCATION */
-.loc{padding:64px 0;background:var(--bg-primary)}
-.loc-in{max-width:600px;margin:0 auto;text-align:center}
-.loc-in h2{font-family:var(--fd);font-size:clamp(1.3rem,3.5vw,1.9rem);font-weight:800;color:var(--text-primary);margin-bottom:8px}
-.loc-addr{font-size:.9rem;color:var(--text-secondary);line-height:1.6;margin-bottom:6px}
-.loc-area{font-size:.78rem;color:var(--text-muted);margin-bottom:24px}
-.loc-btns{display:flex;flex-direction:column;gap:10px;align-items:center}
-.loc-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;font-size:.88rem;font-weight:700;border-radius:var(--r-md);transition:all .2s;width:100%;max-width:320px;font-family:var(--fd)}
-.loc-btn--dir{background:var(--cta);color:#fff;box-shadow:var(--sh-cta)}
-.loc-btn--dir:hover{background:var(--cta-h);transform:translateY(-1px)}
-.loc-btn--ph{background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border-default)}
-.loc-btn--ph:hover{border-color:var(--border-active)}
-.loc-btn svg{width:16px;height:16px}
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="hd" role="banner"><div class="hd-in">
-<a href="https://www.slimmetrymedical.com/" class="logo-link" aria-label="Slimmetry Medical Center"><span class="logo-wrap"><img src="https://cdcssl.ibsrv.net/ibimg/smb/369x136_80/webmgr/1w/5/m/logo.png.webp?5d2d5c4fd3dd9ba677b65577de929a4b" alt="Slimmetry Medical Center" class="logo-img" width="369" height="136"></span></a>
+<a href="https://www.slimmetrymedical.com/" class="logo-link" aria-label="Slimmetry Medical Center"><img src="https://cdcssl.ibsrv.net/ibimg/smb/369x136_80/webmgr/1w/5/m/logo.png.webp?5d2d5c4fd3dd9ba677b65577de929a4b" alt="Slimmetry Medical Center" class="logo-img" width="369" height="136"></a>
 <nav class="hd-nav" aria-label="Main"><a href="#benefits">Benefits</a><a href="#assessment">Assessment</a><a href="#faq">FAQ</a></nav>
 <div class="hd-r">
 <a href="tel:504-910-8020" class="hd-ph" aria-label="Call 504-910-8020"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>504-910-8020</span></a>
@@ -346,26 +317,6 @@ input,select,textarea{font-family:inherit}
 <div class="tru-i"><div class="tru-c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Progress monitoring &amp; adjustments</p></div>
 <div class="tru-i"><div class="tru-c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Education before any decision</p></div>
 </div></div></div></section>
-
-<div class="dv"></div>
-
-<!-- REVIEWS -->
-<section class="rev" id="reviews" aria-label="Patient reviews"><div class="container">
-<div class="sh reveal"><h2>Trusted by Patients</h2></div>
-<div style="text-align:center">
-<div class="rev-stars">★★★★★</div>
-<p class="rev-rat">5.0 rating · Based on Google Reviews</p>
-</div>
-<div class="rev-g">
-<div class="rev-c reveal"><p class="rev-q">"The staff was incredibly professional and made me feel comfortable from the very first visit. I finally feel like I have real support."</p><p class="rev-a">— Verified Patient, Metairie</p></div>
-<div class="rev-c reveal" data-delay="80"><p class="rev-q">"No pressure, no gimmicks. The doctor explained everything clearly and I felt confident about my treatment plan."</p><p class="rev-a">— Verified Patient, New Orleans</p></div>
-<div class="rev-c reveal" data-delay="160"><p class="rev-q">"I've struggled with my weight for years. This program gave me the medical guidance I needed to actually see results."</p><p class="rev-a">— Verified Patient, Kenner</p></div>
-</div>
-<div style="text-align:center">
-<a href="https://www.google.com/maps/place/Slimmetry+Medical+Center/" target="_blank" rel="noopener" class="rev-link">Read More Reviews on Google →</a>
-<p class="rev-disc">Testimonials reflect individual experiences. Results vary.</p>
-</div>
-</div></section>
 
 <div class="dv"></div>
 
@@ -427,19 +378,6 @@ input,select,textarea{font-family:inherit}
 <div class="fqi"><button class="fqt" aria-expanded="false" onclick="togFaq(this)">What if I'm not eligible?<svg class="fqc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="fqb"><div class="fqbi">If the assessment indicates a program isn't the right fit, our team can still provide guidance on alternative approaches and resources to support your wellness goals.</div></div></div>
 </div></div></section>
 
-<div class="dv"></div>
-
-<!-- LOCATION -->
-<section class="loc" id="location" aria-label="Clinic location"><div class="container"><div class="loc-in reveal">
-<h2>Visit Slimmetry Medical Center</h2>
-<p class="loc-addr">3100 Ridgelake Dr, Suite 201<br>Metairie, LA 70002</p>
-<p class="loc-area">Serving Metairie &amp; New Orleans, LA</p>
-<div class="loc-btns">
-<a href="https://www.google.com/maps/search/?api=1&query=Slimmetry+Medical+Center+Metairie+LA" target="_blank" rel="noopener" class="loc-btn loc-btn--dir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Get Directions</a>
-<a href="tel:504-910-8020" class="loc-btn loc-btn--ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call 504-910-8020</a>
-</div>
-</div></div></section>
-
 <!-- FOOTER -->
 <footer class="ft" role="contentinfo"><div class="container"><div class="ft-in">
 <img src="https://cdcssl.ibsrv.net/ibimg/smb/369x136_80/webmgr/1w/5/m/logo.png.webp?5d2d5c4fd3dd9ba677b65577de929a4b" alt="Slimmetry Medical Center" class="ft-logo" width="369" height="136">
@@ -453,9 +391,17 @@ input,select,textarea{font-family:inherit}
 (function(){
 'use strict';
 var T=7,step=1,D={};
-var BMI_THRESHOLD=27;
+var BMI_THRESHOLD=27; // minimum BMI for qualification — change as needed
 try{var s=localStorage.getItem('slim3');if(s)D=JSON.parse(s).d||{}}catch(e){}
-function parseBMI(h,w){var wt=parseFloat(w);if(!h||!wt||wt<=0)return 0;var m=h.match(/(\d+)\s*[''′]?\s*(\d+)/);if(!m)return 0;var i=parseInt(m[1])*12+parseInt(m[2]);return i>0?Math.round((wt/(i*i))*703*10)/10:0;}
+function parseBMI(hStr,wStr){
+  // parse "5'8" or "5'8\"" or "5 8" → inches, then BMI = (lbs / in²) * 703
+  var w=parseFloat(wStr);if(!hStr||!w||w<=0)return 0;
+  var m=hStr.match(/(\d+)\s*[''′]?\s*(\d+)/);
+  if(!m)return 0;
+  var inches=parseInt(m[1])*12+parseInt(m[2]);
+  if(inches<=0)return 0;
+  return Math.round((w/(inches*inches))*703*10)/10;
+}
 window.track=function(e,d){console.log('[Track]',e,d||'')};
 track('lp_view');
 var hdr=document.querySelector('.hd');
@@ -463,7 +409,7 @@ window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',scro
 var stk=document.getElementById('stk'),hb=document.getElementById('heroCtaBtn');
 if(hb&&stk){new IntersectionObserver(function(e){stk.classList.toggle('visible',!e[0].isIntersecting)},{threshold:0}).observe(hb)}
 var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var d=parseInt(e.target.dataset.delay||0);setTimeout(function(){e.target.classList.add('visible')},d);ro.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.reveal,.bc,.rev-c').forEach(function(el){ro.observe(el)});
+document.querySelectorAll('.reveal,.bc').forEach(function(el){ro.observe(el)});
 window.scrollToAssessment=function(){track('assessment_start');var el=document.getElementById('assessment');if(el){window.scrollTo({top:el.getBoundingClientRect().top+pageYOffset-80,behavior:'smooth'})}};
 function upd(){var p=Math.round(step/T*100),f=document.getElementById('pf');f.style.width=p+'%';f.parentElement.setAttribute('aria-valuenow',p)}
 function show(n){document.querySelectorAll('.step').forEach(function(s){s.classList.remove('active')});var t=document.getElementById(n==='result'?'sR':'s'+n);if(t){t.classList.add('active');var c=document.querySelector('.card');window.scrollTo({top:c.getBoundingClientRect().top+pageYOffset-80,behavior:'smooth'})}}
@@ -501,12 +447,14 @@ var bmi=parseBMI(D.height,D.weight);
 var el=D.commitment==='Yes'&&(D.timeline==='ASAP'||D.timeline==='2-4 weeks')&&D.readiness!=='Just researching'&&(bmi===0||bmi>=BMI_THRESHOLD);
 var nm=esc(D.name||'there'),r=document.getElementById('sR'),bk=document.getElementById('booking');
 var bmiLine=bmi>0?'<p style="font-size:.82rem;color:rgba(255,255,255,.55);margin-bottom:16px">Estimated BMI: <strong style="color:#fff">'+bmi+'</strong></p>':'';
-var note='<p style="font-size:.72rem;color:rgba(255,255,255,.35);margin-top:14px">Final eligibility and treatment plan are determined by a licensed provider.</p>';
+var note='<p style="font-size:.72rem;color:rgba(255,255,255,.35);margin-top:14px">Final eligibility determined by a licensed provider.</p>';
 if(el){
-  track('qualified_user',{bmi:bmi});bk.style.display='';
-  r.innerHTML='<div class="rs"><div class="ri el"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>'+bmiLine+'<h3 class="rt">You May Be Eligible, '+nm+'!</h3><p class="rx">Based on your responses, a medically supervised program may be an option to discuss with your provider.</p><button class="br p" onclick="track(\'book_click\');document.getElementById(\'booking\').scrollIntoView({behavior:\'smooth\',block:\'start\'})">Book Consultation</button>'+note+'</div>'
+  track('qualified_user',{bmi:bmi});
+  bk.style.display='';
+  r.innerHTML='<div class="rs"><div class="ri el"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>'+bmiLine+'<h3 class="rt">You May Be Eligible, '+nm+'!</h3><p class="rx">Based on your responses, you could be a candidate for a medically supervised program. Book a consultation to discuss your options.</p><button class="br p" onclick="track(\'book_click\');document.getElementById(\'booking\').scrollIntoView({behavior:\'smooth\',block:\'start\'})">Book Consultation</button>'+note+'</div>'
 }else{
-  track('unqualified_user',{bmi:bmi});bk.style.display='none';
+  track('unqualified_user',{bmi:bmi});
+  bk.style.display='none';
   var bmiMsg=(bmi>0&&bmi<BMI_THRESHOLD)?'Based on your BMI of '+bmi+', you may not meet the minimum threshold for this program. ':'';
   r.innerHTML='<div class="rs"><div class="ri inf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>'+bmiLine+'<h3 class="rt">Here\'s Your Next Best Step, '+nm+'</h3><p class="rx">'+bmiMsg+'Based on your answers, the best next step is to receive more information before booking.</p><button class="br s" onclick="track(\'info_request\');this.textContent=\'We\\\'ll be in touch!\';this.disabled=true;this.style.opacity=\'.6\'">Get Eligibility &amp; Pricing Info</button><br><button style="margin-top:12px;background:none;color:rgba(255,255,255,.5);font-size:.82rem;text-decoration:underline;cursor:pointer;border:none;font-family:inherit" onclick="window.retake()">Retake Assessment</button>'+note+'</div>'
 }
